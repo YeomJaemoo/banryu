@@ -2,6 +2,6 @@ openai
 pandas
 numpy
 folium
-opencv-python
+opencv-python==4.8.1.78 
 streamlit_folium
 streamlit_chat
