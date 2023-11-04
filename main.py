@@ -9,7 +9,7 @@ st.set_page_config(
 
 st.title("🐰🐱🐶반려동물 도우미🐊🦎🐍")
 st.subheader("반려동물을 기를 때 필요한 모든 것이 있다!")
-
+st.image('images/ask_me_chatbot.png')
 pet = [
     {
         "name": "강아지",
