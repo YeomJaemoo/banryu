@@ -14,7 +14,7 @@ pet = [
     {
         "name": "강아지",
         "type": "포유류",
-        "image": r'images\2.png',
+        "image": r"images\2.png",
         "info": "강아지에 대한 정보입니다."
     },
     {
