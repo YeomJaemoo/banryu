@@ -1,5 +1,7 @@
 import streamlit as st
+import os
 
+os.chdir(os.getcwd())
 st.set_page_config(
     page_title="반려동물과 추억쌓기❤️", 
     page_icon="🦎"
@@ -18,31 +20,31 @@ pet = [
     {
         "name": "고양이",
         "type": "포유류",
-        "image": r'images\3.png',
+        "image": r"images\3.png",
         "info": "고양이에 대한 정보입니다."
     },
     {
         "name": "앵무새",
         "type": "조류",
-        "image": r'images\4.png',
+        "image": r"images\4.png",
         "info": "앵무새에 대한 정보입니다."
     },
     {
         "name": "카멜레온",
         "type": "파충류",
-        "image": r'images\5.png',
+        "image": r"images\5.png",
         "info": "카멜레온에 대한 정보입니다."
     },
     {
         "name": "장수풍뎅이",
         "type": "곤충",
-        "image": r'images\6.png',
+        "image": r"images\6.png",
         "info": "장수풍뎅이에 대한 정보입니다."
     },
     {
         "name": "금붕어",
         "type": "어류",
-        "image": r'images\7.png',
+        "image": r"images\7.png",
         "info": "금붕어에 대한 정보입니다."
     }
 ]
