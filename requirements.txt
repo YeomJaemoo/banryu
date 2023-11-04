@@ -3,6 +3,5 @@ pandas
 numpy
 folium
 opencv-python
-base64
 streamlit_folium
 streamlit_chat
