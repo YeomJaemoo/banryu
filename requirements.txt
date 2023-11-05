@@ -5,3 +5,4 @@ folium==0.14.0
 opencv-python==4.8.1.78
 streamlit_folium==0.15.0
 streamlit_chat==0.1.1
+opencv-python-headless
