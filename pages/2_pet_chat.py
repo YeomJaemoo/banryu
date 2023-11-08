@@ -45,8 +45,8 @@ if st.button('기존 체팅 삭제'):
     st.session_state['past'] = []
 
 with st.form('form', clear_on_submit=True):
-    user_input = st.text_input('😎펫이 어떤 문제가 있나요?', '', key='input')
-    submitted = st.form_submit_button('Send')
+    user_input = st.text_input('😎반려동물의 어떤 문제가 있나요?', '', key='input')
+    submitted = st.form_submit_button('제출')
 
 if submitted and user_input:
     # 프롬프트 생성 후 프롬프트를 기반으로 챗봇의 답변을 반환
