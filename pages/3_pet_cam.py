@@ -15,7 +15,7 @@ def convert_image_to_bytes(image):
     return bytes_data
 
 # 카메라 입력
-img_file_buffer = st.camera_input("📸펫과 함께한 추억을 사진으로 남기세요!")
+img_file_buffer = st.camera_input("📸반려 동둘과 함께한 추억을 사진으로 남기세요!")
 
 # 사용자가 업로드한 이미지 가져오기
 uploaded_image = st.file_uploader("워터마크 사진 정하기", type=["png", "jpg", "jpeg"])
