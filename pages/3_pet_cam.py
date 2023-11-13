@@ -43,7 +43,7 @@ if img_file_buffer is not None:
     else:
         st.image(camera_image, channels="BGR")
 
-with st.expander("**나의 펫**🐾 관찰일지📰"):
+with st.expander("**나의 반려 동물**🐾 관찰일지📰"):
     st.subheader("🙂반려 동물의 상태를 기록하고 사진을 찍어 관찰일지를 작성해요.😋")
     # 세션 스테이트를 사용하여 게시판 데이터를 저장
     if 'board' not in st.session_state:
@@ -71,7 +71,7 @@ with st.expander("**나의 펫**🐾 관찰일지📰"):
     
     # 게시판 출력
     for idx, post in enumerate((st.session_state['board'])):
-        st.write(f"## 계획과 보고서 {idx+1}")
+        st.write(f"## 반려 동물 관찰 일지 {idx+1}")
         st.write(f"**학번과 이름:** {post['학번과 이름']}")
         if post.get('일지 내용') is not None:
             st.write(f"**일지 내용:** {post['일지 내용']}")
