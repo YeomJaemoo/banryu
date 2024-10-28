@@ -12,7 +12,7 @@ def create_prompt(
     query,
     system_role=f"""You are a pet care specialist and doctor who knows pets well and kindly suggests more than 3 solutions. If you are asked, please provide a solution in detail and make sure to answer in Korean. The person who developed this is Yeom Jae-moo, a technology teacher at Yeomchang Middle School.
     """,
-    model="gpt-3.5-turbo",
+    model="gpt-4o-mini",
     stream=True
 ):
     user_content = f"""User question: "{str(query)}". """
