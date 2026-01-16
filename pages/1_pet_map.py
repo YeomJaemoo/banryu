@@ -80,11 +80,11 @@ with st.expander("나의 펫과 추억쌓기🙈🙉🙊"):
     if submitted_1:
         # 계획서 추가   
         new_post_1 = {
-            "학번과 이름": title, 
-            "계획": content_1 if content_1 else None, 
-            "계획 지도": image_1,
-            "보고서": content_2 if content_2 else None, 
-            "보고서 첨부 이미지": image_2,
+            "학번과 이름": title,
+            "계획": content_1 if content_1 else None,
+            "계획 지도": image_1.read() if image_1 is not None else None,
+            "보고서": content_2 if content_2 else None,
+            "보고서 첨부 이미지": image_2.read() if image_2 is not None else None,
         }
         st.session_state['board'].append(new_post_1)
     
@@ -113,13 +113,13 @@ with st.expander("나의 펫과 추억쌓기🙈🙉🙊"):
         
         if post.get('계획 지도') is not None:
             # 계획 지도 다운로드 링크 생성
-            b64_img = base64.b64encode(post['계획 지도'].read()).decode()
+            b64_img = base64.b64encode(post['계획 지도']).decode()
             img_href = f'<a href="data:image/png;base64,{b64_img}" download="계획_지도_{idx+1}.png">계획 지도 다운로드</a>'
             st.markdown(img_href, unsafe_allow_html=True)
         
         if post.get('보고서 첨부 이미지') is not None:
             # 보고서 첨부 이미지 다운로드 링크 생성
-            b64_img = base64.b64encode(post['보고서 첨부 이미지'].read()).decode()
+            b64_img = base64.b64encode(post['보고서 첨부 이미지']).decode()
             img_href = f'<a href="data:image/png;base64,{b64_img}" download="보고서_이미지_{idx+1}.png">보고서 첨부 이미지 다운로드</a>'
             st.markdown(img_href, unsafe_allow_html=True)
         
